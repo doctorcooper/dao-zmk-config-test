@@ -1,11 +1,11 @@
 manifest:
   remotes:
-    - name: zmkfirmware
-      url-base: https://github.com/zmkfirmware
+    - name: doctorcooper
+      url-base: https://github.com/doctorcooper
   projects:
     - name: zmk
-      remote: zmkfirmware
-      revision: main
+      remote: doctorcooper
+      revision: dao-keyboard
       import: app/west.yml
   self:
     path: config
