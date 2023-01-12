@@ -45,10 +45,10 @@
 
         raise_layer {
             bindings = <
-  &none  &kp LS(LG(LC(N4)))  &trans     &kp PAGE_UP    &kp UP_ARROW       &kp PAGE_DOWN             &kp HOME           &kp CARET          &kp PAGE_UP  &kp UP_ARROW  &kp PG_DN  &kp HOME  &kp LS(LG(LC(N4)))   &none
-                      &none   &none  &kp LEFT_ARROW  &kp DOWN_ARROW     &kp RIGHT_ARROW              &kp END           &kp MINUS             &kp LEFT        &kp UP  &kp RIGHT   &kp END               &none
-                      &none  &trans          &trans          &trans  &kp LC(LEFT_ARROW)  &kp LC(RIGHT_ARROW)  &kp LC(LEFT_ARROW)  &kp LC(RIGHT_ARROW)        &trans     &trans    &trans              &trans
-                                                           &kp LGUI               &mo 3               &trans              &trans               &trans        &trans
+  &none  &kp LS(LG(LC(N4)))  &trans     &kp PAGE_UP    &kp UP_ARROW       &kp PAGE_DOWN             &kp HOME           &kp CARET          &kp PAGE_UP    &kp UP_ARROW  &kp PG_DN  &kp HOME  &kp LS(LG(LC(N4)))   &none
+                      &none   &none  &kp LEFT_ARROW  &kp DOWN_ARROW     &kp RIGHT_ARROW              &kp END           &kp MINUS             &kp LEFT  &kp DOWN_ARROW  &kp RIGHT   &kp END               &none
+                      &none  &trans          &trans          &trans  &kp LC(LEFT_ARROW)  &kp LC(RIGHT_ARROW)  &kp LC(LEFT_ARROW)  &kp LC(RIGHT_ARROW)          &trans     &trans    &trans              &trans
+                                                           &kp LGUI               &mo 3               &trans              &trans               &trans          &trans
             >;
         };
 
