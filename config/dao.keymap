@@ -22,12 +22,19 @@
 };
 
 / {
+  chosen {
+    //zmk,matrix_transform = &default_transform;
+    zmk,matrix_transform = &less_key_transform;
+  };
+};
+
+/ {
     keymap {
         compatible = "zmk,keymap";
 
         default_layer {
             bindings = <
-  &none        &kp ESC   &kp Q   &kp W     &kp E   &kp R      &kp T      &kp Y          &kp U      &kp I    &kp O     &kp P        &kp LBKT   &none
+        &kp ESC   &kp Q   &kp W     &kp E   &kp R      &kp T      &kp Y          &kp U      &kp I    &kp O     &kp P        &kp LBKT 
          &mt LCTRL TAB   &kp A   &kp S     &kp D   &kp F      &kp G      &kp H          &kp J      &kp K    &kp L  &kp SEMI         &kp SQT
              &kp LSHFT   &kp Z   &kp X     &kp C   &kp V      &kp B      &kp N          &kp M  &kp COMMA  &kp DOT  &kp FSLH  &mt RALT GRAVE
                                         &kp LGUI   &mo 1  &lt 2 RET  &kp SPACE  &kp BACKSPACE   &kp CAPS
@@ -36,7 +43,7 @@
 
         lower_layer {
             bindings = <
-  &none    &kp ESC    &kp N1       &kp N2        &kp N3          &kp N4            &kp N5             &kp N6           &kp N7        &kp N8          &kp N9    &kp N0  &kp GRAVE   &none
+ &kp ESC    &kp N1       &kp N2        &kp N3          &kp N4            &kp N5             &kp N6           &kp N7        &kp N8          &kp N9    &kp N0  &kp GRAVE   
             &trans  &kp EXCL       &kp AT      &kp HASH        &kp DLLR         &kp PRCNT          &kp CARET         &kp AMPS      &kp STAR        &kp LPAR  &kp RPAR  &kp COLON
          &kp LSHFT     &none  &kp KP_PLUS  &kp KP_MINUS  &kp LEFT_BRACE  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp RIGHT_BRACE  &kp KP_EQUAL  &kp UNDERSCORE     &none      &none
                                                &kp LGUI          &trans             &mo 3            &kp DOT        &kp COMMA     &kp QMARK
@@ -45,7 +52,7 @@
 
         raise_layer {
             bindings = <
-  &none  &kp LS(LG(LC(N4)))  &trans     &kp PAGE_UP    &kp UP_ARROW       &kp PAGE_DOWN             &kp HOME           &kp CARET          &kp PAGE_UP    &kp UP_ARROW  &kp PG_DN  &kp HOME  &kp LS(LG(LC(N4)))   &none
+  &kp LS(LG(LC(N4)))  &trans     &kp PAGE_UP    &kp UP_ARROW       &kp PAGE_DOWN             &kp HOME           &kp CARET          &kp PAGE_UP    &kp UP_ARROW  &kp PG_DN  &kp HOME  &kp LS(LG(LC(N4)))   
                       &none   &none  &kp LEFT_ARROW  &kp DOWN_ARROW     &kp RIGHT_ARROW              &kp END           &kp MINUS             &kp LEFT  &kp DOWN_ARROW  &kp RIGHT   &kp END               &none
                       &none  &trans          &trans          &trans  &kp LC(LEFT_ARROW)  &kp LC(RIGHT_ARROW)  &kp LC(LEFT_ARROW)  &kp LC(RIGHT_ARROW)          &trans     &trans    &trans              &trans
                                                            &kp LGUI               &mo 3               &trans              &trans               &trans          &trans
@@ -54,7 +61,7 @@
 
         adjust_layer {
             bindings = <
-  &none      &reset   &bootloader         &none         &none         &none         &none         &none         &none         &none         &none         &none  &bootloader  &reset
+     &reset   &bootloader         &none         &none         &none         &none         &none         &none         &none         &none   &bootloader  &reset
          &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &bt BT_SEL 4  &bt BT_SEL 3  &bt BT_SEL 2  &bt BT_SEL 1  &bt BT_SEL 0   &bt BT_CLR
               &none         &none         &none         &none         &none         &none         &none         &none         &none         &none         &none        &none
                                                        &trans         &none        &trans        &trans         &none        &trans
