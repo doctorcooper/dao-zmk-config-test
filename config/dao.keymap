@@ -44,19 +44,19 @@
 
         lower_layer {
             bindings = <
-    &kp F1  &kp F2       &kp F3        &kp F4          &kp F5            &kp F6             &kp F7           &kp F8     &kp F9    &kp F10    &kp F11   &kp F12
-    &trans  &kp N1       &kp N2        &kp N3          &kp N4            &kp N5             &kp N6           &kp N7     &kp N8     &kp N9     &kp N0     &none
- &kp LSHFT   &none  &kp KP_PLUS  &kp KP_MINUS  &kp LEFT_BRACE  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp RIGHT_BRACE      &none  &kp MINUS  &kp EQUAL  &kp BSLH
-                                     &kp LGUI          &trans             &mo 3         &kp KP_DOT     &kp KP_COMMA  &kp QMARK
+    &trans    &kp N1       &kp N2        &kp N3          &kp N4            &kp N5             &kp N6           &kp N7     &kp N8                &kp N9                 &kp N0    &trans
+    &trans  &kp EXCL       &kp AT      &kp HASH      &kp DOLLAR       &kp PERCENT          &kp CARET         &kp AMPS  &kp ASTRK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS     &none
+ &kp LSHFT     &none  &kp KP_PLUS  &kp KP_MINUS  &kp LEFT_BRACE  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp RIGHT_BRACE  &kp MINUS             &kp EQUAL                  &none  &kp BSLH
+                                       &kp LGUI          &trans             &mo 3         &kp KP_DOT     &kp KP_COMMA  &kp QMARK
             >;
         };
 
         raise_layer {
             bindings = <
- &kp LS(LG(N4))  &kp LS(LC(LG(N4)))  &kp LS(LG(N5))    &kp UP_ARROW       &kp PAGE_DOWN             &kp HOME               &none                &none     &kp PG_UP  &kp PG_DN  &kp HOME  &kp LS(LG(LC(N4)))
-          &none               &none  &kp LEFT_ARROW  &kp DOWN_ARROW     &kp RIGHT_ARROW              &kp END            &kp LEFT             &kp DOWN  &kp UP_ARROW  &kp RIGHT   &kp END               &none
-          &none              &trans          &trans          &trans  &kp LC(LEFT_ARROW)  &kp LC(RIGHT_ARROW)  &kp LC(LEFT_ARROW)  &kp LC(RIGHT_ARROW)        &trans     &trans    &trans              &trans
-                                                           &kp LGUI               &mo 3               &trans              &trans               &trans        &trans
+ &kp LS(LG(N4))  &kp LS(LC(LG(N4)))  &kp LS(LG(N5))     &none  &kp PAGE_DOWN  &kp HOME               &none                &none     &kp PG_UP  &kp PG_DN  &kp HOME  &kp LS(LG(LC(N4)))
+         &kp F1              &kp F2          &kp F3    &kp F4         &kp F5    &kp F6            &kp LEFT             &kp DOWN  &kp UP_ARROW  &kp RIGHT   &kp END               &none
+         &kp F7              &kp F8          &kp F9   &kp F10        &kp F11   &kp F12  &kp LC(LEFT_ARROW)  &kp LC(RIGHT_ARROW)        &trans     &trans    &trans              &trans
+                                                     &kp LGUI          &mo 3    &trans              &trans               &trans        &trans
             >;
         };
 
