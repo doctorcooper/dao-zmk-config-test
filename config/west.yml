@@ -3,9 +3,9 @@ manifest:
     - name: doctorcooper
       url-base: https://github.com/doctorcooper
   projects:
-    - name: zmk
+    - name: original-dao-zmk-config
       remote: doctorcooper
-      revision: dao-keyboard
-      import: app/west.yml
+      revision: refactoring
+      import: config/west.yml
   self:
     path: config
