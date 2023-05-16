@@ -35,37 +35,37 @@
 
         default_layer {
             bindings = <
-    &mt LALT ESC   &kp Q   &kp W     &kp E   &kp R      &kp T      &kp Y          &kp U               &kp I    &kp O     &kp P   &kp LBKT
-   &mt LCTRL TAB   &kp A   &kp S     &kp D   &kp F      &kp G      &kp H          &kp J               &kp K    &kp L  &kp SEMI    &kp SQT
- &mt LSHIFT BSLH   &kp Z   &kp X     &kp C   &kp V      &kp B      &kp N          &kp M           &kp COMMA  &kp DOT  &kp FSLH  &mt LALT GRAVE
-                                  &kp LGUI   &mo 1  &lt 2 RET  &kp SPACE  &kp BACKSPACE  &kp CAPS
+   &mt LALT ESC  &kp Q  &kp W     &kp E  &kp R      &kp T      &kp Y          &kp U      &kp I    &kp O     &kp P        &kp LBKT
+  &mt LCTRL TAB  &kp A  &kp S     &kp D  &kp F      &kp G      &kp H          &kp J      &kp K    &kp L  &kp SEMI         &kp SQT
+&mt LSHIFT BSLH  &kp Z  &kp X     &kp C  &kp V      &kp B      &kp N          &kp M  &kp COMMA  &kp DOT  &kp FSLH  &mt LALT GRAVE
+                               &kp LGUI  &mo 1  &lt 2 RET  &kp SPACE  &kp BACKSPACE   &kp CAPS
             >;
         };
 
         lower_layer {
             bindings = <
-    &trans    &kp N1       &kp N2        &kp N3          &kp N4            &kp N5             &kp N6           &kp N7     &kp N8                &kp N9                 &kp N0    &trans
-    &trans  &kp EXCL       &kp AT      &kp HASH      &kp DOLLAR       &kp PERCENT          &kp CARET         &kp AMPS  &kp ASTRK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS     &none
- &kp LSHFT     &none  &kp KP_PLUS  &kp KP_MINUS  &kp LEFT_BRACE  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp RIGHT_BRACE  &kp MINUS             &kp EQUAL                  &none  &kp BSLH
-                                       &kp LGUI          &trans             &mo 3         &kp KP_DOT           &trans  &kp QMARK
+   &trans    &kp N1       &kp N2        &kp N3          &kp N4            &kp N5             &kp N6           &kp N7     &kp N8                &kp N9                 &kp N0    &trans
+   &trans  &kp EXCL       &kp AT      &kp HASH      &kp DOLLAR       &kp PERCENT          &kp CARET         &kp AMPS  &kp ASTRK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS     &none
+&kp LSHFT     &none  &kp KP_PLUS  &kp KP_MINUS  &kp LEFT_BRACE  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp RIGHT_BRACE  &kp MINUS             &kp EQUAL                  &none  &kp BSLH
+                                      &kp LGUI          &trans             &mo 3         &kp KP_DOT          &kp DEL  &kp QMARK
             >;
         };
 
         raise_layer {
             bindings = <
- &kp LS(LG(N4))  &kp LS(LC(LG(N4)))  &kp LS(LG(N5))     &none  &kp PAGE_DOWN  &kp HOME               &none                &none     &kp PG_UP      &kp PG_DN  &kp HOME  &kp LS(LG(LC(N4)))
-         &kp F1              &kp F2          &kp F3    &kp F4         &kp F5    &kp F6            &kp LEFT             &kp DOWN  &kp UP_ARROW      &kp RIGHT   &kp END               &none
-         &kp F7              &kp F8          &kp F9   &kp F10        &kp F11   &kp F12  &kp LC(LEFT_ARROW)  &kp LC(RIGHT_ARROW)  &kp LA(LEFT)  &kp LA(RIGHT)    &trans              &trans
-                                                     &kp LGUI          &mo 3    &trans              &trans               &trans        &trans
+&kp LS(LG(N4))  &kp LS(LC(LG(N4)))  &kp LS(LG(N5))     &none  &kp PAGE_DOWN  &kp HOME               &none                &none     &kp PG_UP      &kp PG_DN  &kp HOME  &kp LS(LG(LC(N4)))
+        &kp F1              &kp F2          &kp F3    &kp F4         &kp F5    &kp F6            &kp LEFT             &kp DOWN  &kp UP_ARROW      &kp RIGHT   &kp END               &none
+        &kp F7              &kp F8          &kp F9   &kp F10        &kp F11   &kp F12  &kp LC(LEFT_ARROW)  &kp LC(RIGHT_ARROW)  &kp LA(LEFT)  &kp LA(RIGHT)    &trans              &trans
+                                                    &kp LGUI          &mo 3    &trans              &trans               &trans        &trans
             >;
         };
 
         adjust_layer {
             bindings = <
-     &reset   &bootloader         &none         &none         &none         &none         &none         &none         &none         &none   &bootloader      &reset
- &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &bt BT_SEL 4  &bt BT_SEL 3  &bt BT_SEL 2  &bt BT_SEL 1  &bt BT_SEL 0  &bt BT_CLR
-      &none         &none         &none         &none         &none         &none         &none         &none         &none         &none         &none       &none
-                                               &trans         &none        &trans        &trans         &none        &trans
+    &reset   &bootloader         &none         &none         &none         &none         &none         &none         &none         &none   &bootloader      &reset
+&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &bt BT_SEL 4  &bt BT_SEL 3  &bt BT_SEL 2  &bt BT_SEL 1  &bt BT_SEL 0  &bt BT_CLR
+     &none         &none         &none         &none         &none         &none         &none         &none         &none         &none         &none       &none
+                                              &trans         &none        &trans        &trans         &none        &trans
             >;
         };
     };
